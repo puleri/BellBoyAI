@@ -1,0 +1,38 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "towels",
+         "patterns": ["I need towels", "Can you send me towels?", "I am out of towels.", "Can we have some extra towels?", "How do I get more towels?", "Can we get some extra towels?"],
+         "responses": ["Of course- Let us get you some more. How many do you need?", "How many do you need sent to you?", "I can help with that! How many will you be needing?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "age",
+         "patterns": ["how old", "how old is BellBoy", "what is your age", "how old are you", "age?"],
+         "responses": ["I am 26 years old!", "26 years young!"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call me BellBoy.", "I'm BellBoy!", "I'm BellBoy aka the hotel AI specialist."],
+         "context_set": ""
+        },
+        {"tag": "number_of_towels",
+         "patterns": ["I need", "whats on the menu", "what do you reccommend?", "could i get something to eat"],
+         "responses": ["We sell chocolate chip cookies for $2!", "Cookies are on the menu!"],
+         "context_set": ""
+        },
+        {"tag": "hours",
+         "patterns": ["When are you open?", "what are your hours", "hours of operation", "hours", "when do you close?", "how long are you open", "how much longer are you open for?"],
+         "responses": ["The front desk is always open, and so am I!"],
+         "context_set": ""
+        }
+   ]
+}
