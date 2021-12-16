@@ -103,6 +103,9 @@ def bag_of_words(s, words):
 
 
 def chat():
+    import os
+    os.system('cls' if os.name == 'nt' else 'clear')
+
     print('Start talking with the bot! (type goodbye to exit)')
     while True:
         inp = input("You: ")
@@ -137,14 +140,13 @@ def chat():
                     print("Is there anything else I can help you with?")
                     break
 
-        # print("resuls is ", results)
-    else:
-        if results[results_index] > 0.8:
-            for tg in data["intents"]:
-                if tg["tag"] == tag:
-                    responses = tg["responses"]
-            print(random.choice(responses))
         else:
-            print('I didn\'t quite get that. Please try again or ask me a different question.')
+            if results[results_index] > 0.8:
+                for tg in data["intents"]:
+                    if tg["tag"] == tag:
+                        responses = tg["responses"]
+                print(random.choice(responses))
+            else:
+                print('I didn\'t quite get that. Please try again or ask me a different question.')
 
 chat()
