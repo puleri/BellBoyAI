@@ -24,9 +24,19 @@
          "responses": ["You can call me BellBoy.", "I'm BellBoy!", "I'm BellBoy aka the hotel AI specialist."],
          "context_set": ""
         },
-        {"tag": "number_of_towels",
-         "patterns": ["I need", "whats on the menu", "what do you reccommend?", "could i get something to eat"],
-         "responses": ["We sell chocolate chip cookies for $2!", "Cookies are on the menu!"],
+        {"tag": "current_location",
+         "patterns": ["Where", "Where do you live?", "Where are you?", "Where do you live now?", "Where do you reside?", "Where are you living currently?", "Where do you live currently?"],
+         "responses": ["I currently live in Seattle Washington, where I have been since ~2018!"],
+         "context_set": ""
+        },
+        {"tag": "from_ohio",
+         "patterns": ["Where are you from?", "Where did you grow up?", "Where were you born?", "Where were you raised?", "Did you grow up in America?"],
+         "responses": ["I was born and raised in Columbus, Ohio. O-H!", "I am from Columbus, Ohio. I love Ohio."],
+         "context_set": ""
+        },
+        {"tag": "O-H",
+         "patterns": ["O-H", "O H", "O-H!"],
+         "responses": ["I-O!"],
          "context_set": ""
         },
         {"tag": "hours",
