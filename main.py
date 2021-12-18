@@ -14,7 +14,7 @@ from tensorflow.python.framework import ops
 with open("intents.json") as file:
     data = json.load(file)
 
-# if you edit the intents file, make sure to delete models checkpoint and pickle
+# pt 1 if you edit the intents file, make sure to delete models checkpoint and pickle
 try:
     with open("data.pickle", "rb") as f:
         words, labels, training, output = pickle.load(f)
@@ -80,12 +80,12 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
-# if you edit the intents file, make sure to comment out this try except and the model.load
-try:
-    model.load("model.tflearn")
-except:
-    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-    model.save("model.tflearn")
+# pt 2 if you edit the intents file, make sure to comment out this try except and the model.load
+# try:
+    # model.load("model.tflearn")
+# except:
+model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+model.save("model.tflearn")
 
 
 def bag_of_words(s, words):

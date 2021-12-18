@@ -35,7 +35,7 @@
          "context_set": ""
         },
         {"tag": "O-H",
-         "patterns": ["O-H", "O H", "O-H!"],
+         "patterns": ["OH", "O-H", "O H", "O-H!"],
          "responses": ["I-O!"],
          "context_set": ""
         },
